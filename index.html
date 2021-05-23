@@ -47,21 +47,67 @@
       </nav>
 
       <div class="container">
-        <h1 class="text-center" >DIMENSIONS COUPLING HUB</h1>        
+        <div class="row">
+          <h1 class="text-center" >Bores and keyways for Flexible Couplings(Inch Series)</h1>
+        </div>
       </div>
 
       <div class="container">
-            <p></p>
-            Please enter a shaft diameter
-            <p></p>
+        <div class="row">
+          <div class="col-3">
+            <h3 class="text" >Input</h3>
+          
+            <label for="basic-url" class="form-label">Shaft Diameter</label>
+            <div class="input-group mb-3">
+
+              <span class="input-group-text" id="basic-addon3">Diam</span>
+
+              <input type="text" class="form-control" id="diameter" aria-describedby="basic-addon3">
+            </div>
+
+          </div>
+        </div>
       </div>
+      <p></p>
+      <p></p>
 
       <div class="container">
+        <h3 class="text" >Output</h3>
+        <div class="row">
+          <div class="col-6">
+            <div class="card" style="width: 20rem;">
+              <div class="card-header text-center">
+                Shaft
+              </div>
+              <img src="img/shaft.jpg" class="card-img-top" >
 
-        <input type="text" id="diameter">
-        <button type="button" class="btn btn-primary" id="calcular">Calculate</button>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="Shaft_Tolerance_Max">Shaft Tolerance Max. = </li>
+                <li class="list-group-item" id="Shaft_Tolerance_Min">Shaft Tolerance Min. = </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6">
+              <div class="card" style="width: 20rem;">
+                <div class="card-header text-center" >
+                  Bore Hole
+                </div>
+                <img src="img/bore.jpg" class="card-img-top" >
+                <ul class="list-group list-group-flush">
+                  
+                  <li class="list-group-item" id="Int_Bore_Max">Interferance Bore Max. =</li>
+                  <li class="list-group-item" id="Int_Bore_Min">Interferance Bore Min. =</li>
+                </ul>
+              </div>
+          </div>
+        </div>
 
       </div>
+           
+      </div>
+
+      <p></p>
+      <p></p>
 
       <div class="container">
        
@@ -92,11 +138,14 @@
 
         </tbody>
       </table>
-      </div>
 
       <div >
         <h1 id="resultado"></h1>
       </div>
+
+      </div>
+
+     
 
 
 
