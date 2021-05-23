@@ -83,16 +83,16 @@ function calcular(){
     const Shaft_Tol_Max= dia + o.Smax
     const Shaft_Tol_Min= dia + o.Smin
 
-    document.getElementById("Shaft_Tolerance_Max").innerHTML =  "Shaft Tolerance Max. =" + Shaft_Tol_Max.toFixed(4);
-    document.getElementById("Shaft_Tolerance_Min").innerHTML =  "Shaft Tolerance Min. =" + Shaft_Tol_Min.toFixed(4);
+    document.getElementById("Shaft_Tolerance_Max").innerHTML =  "Smax=" + Shaft_Tol_Max.toFixed(4);
+    document.getElementById("Shaft_Tolerance_Min").innerHTML =  "Smin=" + Shaft_Tol_Min.toFixed(4);
 
     //calculo para las tolerancias del agujero
 
     const Int_Bore_Max= dia + o.IBmax
     const Int_Bore_Min= dia + o.IBmin
 
-    document.getElementById("Int_Bore_Max").innerHTML =  "Interferance Bore Max. =" + Int_Bore_Max.toFixed(4);
-    document.getElementById("Int_Bore_Min").innerHTML =  "Interferance Bore Min. =" + Int_Bore_Min.toFixed(4);
+    document.getElementById("Int_Bore_Max").innerHTML =  "IBmax=" + Int_Bore_Max.toFixed(4);
+    document.getElementById("Int_Bore_Min").innerHTML =  "IBmin=" + Int_Bore_Min.toFixed(4);
 
 
 }
