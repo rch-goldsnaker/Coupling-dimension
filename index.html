@@ -8,44 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Coupling Dimensions</title>
   </head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
       <div class="container">
         <div class="row">
           <h1 class="text-center" >Bores and keyways for Flexible Couplings(Inch Series)</h1>
@@ -56,26 +22,21 @@
         <div class="row">
           <div class="col-3">
             <h3 class="text" >Input</h3>
-          
             <label for="basic-url" class="form-label">Shaft Diameter</label>
             <div class="input-group mb-3">
-
-              <span class="input-group-text" id="basic-addon3">Shaft Diameter</span>
-
+              <span class="input-group-text" id="basic-addon3">Sd</span>
               <input type="text" class="form-control" id="diameter" aria-describedby="basic-addon3">
             </div>
-
           </div>
         </div>
+       <hr>
       </div>
-      <p></p>
-      <p></p>
 
       <div class="container">
         <h3 class="text" >Output</h3>
         <div class="row">
-          <div class="col-6 border text-center bg-dark text-white p-2 " >Shaft</div>
-          <div class="col-6 border text-center bg-dark text-white p-2 ">Bore Hole</div>
+          <div class="col-6 border text-center bg-info bg-gradient text-white p-2 " >SHAFT DIMENSIONS</div>
+          <div class="col-6 border text-center bg-info bg-gradient text-white p-2 ">BORE HOLE DIMENSIONS</div>
         </div>
         <div class="row">
           <div class="col-3 border"> <img src="img/shaft.jpg" class="card-img-top" > </div>
@@ -83,11 +44,11 @@
             <p></p>
             <ol class="list-group ">
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="p-1 mb-1">Shat tolerance Max</div>
+                <div class="p-1 mb-1">Shaft Dia. Max</div>
                 <div class="p-1 mb-1 bg-info text-white fw-bold rounded" id="Shaft_Tolerance_Max" >Smax=</div>
               </li>
               <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="p-1 mb-1">Shat tolerance Min</div>
+                <div class="p-1 mb-1">Shaft Dia. Min</div>
                 <div class="p-1 mb-1 bg-info text-white fw-bold rounded" id="Shaft_Tolerance_Min" >Smin=</div>
               </li>
             </ol>
@@ -107,15 +68,11 @@
             </ol>
           </div>
         </div>
-
+        <hr>
       </div>
            
-      </div>
-
-      <p></p>
-      <p></p>
-
       <div class="container">
+        <h3 class="text" >Table</h3>
        <div class="row">
       <table class="table table-bordered table-hover">
         <thead>
@@ -151,12 +108,6 @@
 
       </div>
     </div>
-
-     
-
-
-
-
       <script src="javascript.js">
       </script>
 
